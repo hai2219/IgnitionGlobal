@@ -10,11 +10,11 @@ Template Name: Contact
 
 
 	<div id="container">
+        <?php get_template_part( 'home-slideshow' ); ?>
 		<section id="content">
 		<div class="contact-content">
-		<header class="entry-header">
-						<?php the_title(); ?>
-						</header><!-- .entry-header -->
+
+
 		<?php
 		$address = '';
 		
@@ -30,7 +30,6 @@ Template Name: Contact
     
         endwhile; ?>
      <?php endif; ?> 
-		<div id="map-canvas" class="map"><img src="<?php //print get_template_directory_uri() ?>/images/map.jpg" /></div>
 		<div class="content">
 		<?php if( have_posts() ) : the_post(); ?>
 						
@@ -43,7 +42,9 @@ Template Name: Contact
        <div class="contact-form">
        <?php print do_shortcode('[contact-form-7 id="31" title="Contact form 1"]');?>
        </div>
-     </div>
+            <div id="map-canvas" class="map"><img src="<?php //print get_template_directory_uri() ?>/images/map.jpg" /></div>
+
+        </div>
      
 		</section><!-- #content -->
 		

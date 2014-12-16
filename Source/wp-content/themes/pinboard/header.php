@@ -6,6 +6,7 @@
 <title><?php wp_title(); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
 </head>
 
@@ -22,13 +23,14 @@
 			</div>
 			
 			<div class="right">
-			<div class="contact">
-			<div class="phone">+65 8888 8888</div>
-			<div class="email">info@.ignition.com</div>
-			
-			</div>
+            <div class="row">
 			<div class="search"><?php get_sidebar( 'header' ); ?></div>
-			
+				<div class="contact">
+					<div class="phone">+65 8888 8888</div>
+					<div class="email">info@.ignition.com</div>
+
+				</div>
+			</div>
 			<nav id="access">
 				<a class="nav-show" href="#access">Show Navigation</a>
 				<a class="nav-hide" href="#nogo">Hide Navigation</a>

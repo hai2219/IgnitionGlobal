@@ -583,7 +583,6 @@ function pinboard_enqueue_styles() {
 	wp_enqueue_style( 'owl.theme' );
 	wp_enqueue_style( 'owl.transitions' );
 	wp_enqueue_style( 'custom' );
-	wp_enqueue_style( 'reponsive' );
 	
 }
 endif;

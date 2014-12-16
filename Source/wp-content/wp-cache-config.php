@@ -19,7 +19,7 @@ $wp_supercache_304 = 0; //Added by WP-Cache Manager
 $wp_cache_no_cache_for_get = 0; //Added by WP-Cache Manager
 $wp_cache_disable_utf8 = 0; //Added by WP-Cache Manager
 $cache_page_secret = 'bd9993e798db4f5b72fe48f95f3debec'; //Added by WP-Cache Manager
-$wp_cache_home_path = '/finefoods/Source/'; //Added by WP-Cache Manager
+$wp_cache_home_path = '/IgnitionGlobal/Source/'; //Added by WP-Cache Manager
 $wp_cache_slash_check = 1; //Added by WP-Cache Manager
 if ( ! defined('WPCACHEHOME') )
 	define( 'WPCACHEHOME', WP_CONTENT_DIR . "/plugins/wp-super-cache/" ); //Added by WP-Cache Manager

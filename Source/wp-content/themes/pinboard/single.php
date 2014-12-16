@@ -1,37 +1,47 @@
 <?php get_header(); ?>
+<?php get_template_part( 'about-slideshow' ); ?>
 	<div id="container">
-		<section id="content" <?php pinboard_content_class(); ?>>
-			<?php if( have_posts() ) : the_post(); ?>
-				<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-					<div class="entry">
-						<header class="entry-header">
-							<<?php pinboard_title_tag( 'post' ); ?> class="entry-title"><?php the_title(); ?></<?php pinboard_title_tag( 'post' ); ?>>
-							<?php pinboard_entry_meta(); ?>
-						</header><!-- .entry-header -->
-						<div class="entry-content">
-							<?php if( has_post_format( 'audio' ) ) : ?>
-								<p><?php pinboard_post_audio(); ?></p>
-							<?php elseif( has_post_format( 'video' ) ) : ?>
-								<p><?php pinboard_post_video(); ?></p>
-							<?php endif; ?>
+		<section id="content" class="content-news-details">
+			<div class="news-details">
+
+				<?php if( have_posts() ) : the_post();
+					$id = get_the_ID();
+					$country = get_post_meta($id, 'country', true);
+					?>
+
+
+					<header class="entry-header">
+						<div class="title">
+							Last news							</div>
+
+					</header>
+					<div class="content-detail">
+						<div class="single-title">
+							<?php the_title(); ?>
+						</div>
+						<div class="date"><?php print get_the_date('M d, Y');
+							if(isset($country)){
+								print ' - '.$country;
+							}
+							?></div>
+						<div class="img-detail">
+							<?php the_post_thumbnail( 'product-thumb' ); ?>
+						</div>
+
+						<div class="content">
 							<?php the_content(); ?>
-							<div class="clear"></div>
-						</div><!-- .entry-content -->
-						<footer class="entry-utility">
-							<?php wp_link_pages( array( 'before' => '<p class="post-pagination">' . __( 'Pages:', 'pinboard' ), 'after' => '</p>' ) ); ?>
-							<?php the_tags( '<div class="entry-tags">', ' ', '</div>' ); ?>
-							<?php pinboard_social_bookmarks(); ?>
-							<?php pinboard_post_author(); ?>
-						</footer><!-- .entry-utility -->
-					</div><!-- .entry -->
-					<?php comments_template(); ?>
-				</article><!-- .post -->
-			<?php else : ?>
-				<?php pinboard_404(); ?>
-			<?php endif; ?>
+						</div>
+					</div>
+
+
+
+
+
+
+
+				<?php endif; ?>
+			</div><!-- .entry -->
 		</section><!-- #content -->
-		<?php if( ( 'no-sidebars' != pinboard_get_option( 'layout' ) ) && ( 'full-width' != pinboard_get_option( 'layout' ) ) ) : ?>
-			<?php get_sidebar(); ?>
-		<?php endif; ?>
+
 	</div><!-- #container -->
 <?php get_footer(); ?>

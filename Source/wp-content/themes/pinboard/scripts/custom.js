@@ -59,6 +59,14 @@ $(document).ready(function(){
      $(this).parents('li').find('.content').slideDown();
      }
   });
+  var news = $('.news-content');
+    news.find('.paging-filter').find('select').on('change',function(){
+       var current_uri = document.location.protocol + "//" + document.location.host + document.location.pathname;
+        var number = $(this).val();
+        url = current_uri + '?number=' + number;
+        document.location = url;
+    });
+
   
 });
 })(jQuery)

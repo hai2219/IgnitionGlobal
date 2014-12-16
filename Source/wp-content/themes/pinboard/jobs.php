@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: About
+Template Name: Jobs
 */
 
 ?>
@@ -12,7 +12,7 @@ Template Name: About
 
 	<div id="container">
 		<section id="content">
-		<div class="about-content">
+		<div class="news-content">
 		<?php if( have_posts() ) : the_post(); ?>
 		
 						<header class="entry-header">
@@ -25,9 +25,7 @@ Template Name: About
 							<?php the_content(); ?>
 							<div class="clear"></div>
 						</div><!-- .entry-content -->
-			<?php
-			piklist('home/job');
-			?>
+
 		<?php endif; ?>
      
      </div>

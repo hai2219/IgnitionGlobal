@@ -1,3 +1,11 @@
+@font-face {
+	font-family: 'Proxima Nova';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+		url("../font/ProximaNova-Regular.otf") format('woff');
+}
+
 body {
 	font-size: 14px;
 	font-family: "Open Sans";
@@ -5,16 +13,12 @@ body {
 	max-width: 1280px !important;
 	margin: auto;
 }
-h2{
-	color: #be1f24;
-	font-size: 18px;
-}
 a{
-	color:#6e6e6e;
+	color:#6e6e6e  !important;
 
 }
-a:hover{
-	color:#ab0004;
+a:hover, a:active, a:visited{
+	color:#ab0004  !important;
 
 }
 #wrapper {
@@ -23,7 +27,7 @@ a:hover{
 }
 
 #header {
-
+	
 	margin: auto;
 	width: 960px;
 }
@@ -34,15 +38,12 @@ a:hover{
 	float:left;
 }
 #header .contact{
-	color: #05056a;
-	margin: auto;
-	text-align: center;
+	float:left;
+	height: 101px;
 }
 #header .search{
-	float: right;
-	text-align: right;
-	vertical-align: middle;
-
+	float:right;
+	 margin: auto;
 }
 #site-title,#site-description {
 	float: none;
@@ -64,8 +65,8 @@ a:hover{
 #access li {
 	display: inline-block;
 	float: none;
-	height: 33px;
-	line-height: 33px;
+	height: 36px;
+	line-height: 36px;
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -75,10 +76,10 @@ a:hover{
 #access li a {
 	color: #6e6e6e;
     display: inline-block;
-    font-family: "Open Sans";
+    font-family: "Proxima Nova";
     font-size: 15px;
     font-weight: normal;
-    height: 33px !important;
+    height: 36px;
     margin: auto;
     padding: 0 6px;
 }
@@ -91,9 +92,9 @@ a:hover{
 
 #access li>a:hover,#access li.current-menu-item>a,#access li.current-menu-parent>a
 	{
-
+	
 	color: #ab0004;
-
+	
 }
 
 #access li ul {
@@ -165,7 +166,7 @@ a:hover{
 }
 #home-slide .item img{
 	width: 100%;
-
+	
 }
 
 #home-slide .owl-controls .owl-prev {
@@ -258,7 +259,7 @@ section {
 
 .entry-title a {
 	color: #1f295c !important;
-	font-family: 'Open Sans';
+	font-family: 'Proxima Nova';
 	font-size: 26px;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -272,7 +273,7 @@ section {
 #footer {
 	border-top: none;
 	clear: both;
-	padding-top: 22px;
+	padding-top: 10px;
 	padding-bottom: 10px;
 	background: url("../images/footer-bg.jpg") no-repeat scroll center
 		top rgba(0, 0, 0, 0);
@@ -302,16 +303,15 @@ section {
 
 .bottom-join {
 	display: inline-block;
-	width: 40%;
-
+	width: 30%;
+	
 	font-size: 10px;
 	vertical-align: top;
 }
 
 .bottom-join .join {
-
-	max-height: 140px;
-	min-height: 140px;
+	
+	width: 293px;
 }
 
 .bottom-join form {
@@ -325,7 +325,6 @@ section {
 	width: 90%;
 	margin: 0;
 	padding: 0;
-	color: #619ff6;
 }
 
 .bottom-join .text,.bottom-join .text:focus,.bottom-join .wpcf7-text {
@@ -359,8 +358,8 @@ section {
 
 .bottom-social {
 	display: inline-block;
-	width: 28%;
-	text-align: left;
+	width: 30%;
+	text-align: right;
 	vertical-align: top;
 }
 
@@ -372,7 +371,7 @@ section {
 
 .bottom-menu .group1 {
 	display: inline-block;
-
+	
 	text-align: left;
 }
 
@@ -395,37 +394,37 @@ section {
 }
 
 section {
-
+	
 }
 
 .entry-header {
+	font-size: 22px;
 	font-weight: bold;
-	text-align: left;
+	text-align: center;
 	text-transform: uppercase;
 	color: #1f295c;
-	margin-bottom: 20px;
 }
 
 #container #home-content {
-
+	
 }
 
 #container #content {
-	clear: both;
+	
 }
 
 #container .about-content {
-
+	
 }
 
 #site-title {
 	float: left;
-
+    
 }
 
 #page-slideshow-opacity {
-
-
+	
+	
 }
 
 .entry-content a img,#attachment-nav a img {
@@ -503,17 +502,18 @@ section {
 }
 
 .img-detail {
-
-
+	display: inline-block;
+	width: 353px;
 }
 
 .img-detail img {
-	max-width: 451px;
+	width: 320px;
 	border: 6px solid #fff;
 }
 
 .content-detail {
-	margin: auto;
+	display: inline-block;
+	width: 353px;
 	vertical-align: top;
 }
 
@@ -619,8 +619,9 @@ body.single-product111 {
 }
 
 #container .contact-content {
-	clear: both;
-
+	background: none repeat scroll 0 0 #dcdbdb;
+	height: 316px;
+	overflow: hidden;
 	padding: 10px 39px;
 }
 
@@ -668,7 +669,7 @@ div.wpcf7 img.ajax-loader {
 }
 
 .location-title {
-	color: #be1f24;
+	color: #1f295c;
 	font-size: 16px;
 	font-weight: bold;
 }
@@ -681,8 +682,8 @@ div.wpcf7 img.ajax-loader {
 }
 
 .social-btn {
-
-	text-align: left;
+	float: right;
+	text-align: right;
 }
 
 .bottom-social .widget-title,.bottom-social .sfmsb-text {
@@ -690,7 +691,7 @@ div.wpcf7 img.ajax-loader {
 }
 
 .bottom-social .square {
-
+	
 	font-size: 36px !important;
 	height: 36px !important;
 	width: 36px !important;
@@ -712,17 +713,17 @@ div.wpcf7 img.ajax-loader {
 
 #access {
 	background: none repeat scroll 0 0 #b2b2b2;
-
+	
     margin: 0;
     padding: 0;
-
+    
 }
 
 .note {
 	color: #454c73;
 	font-size: 13px;
 	font-style: italic;
-	font-family: 'Myriad Pro';
+	font-family: 'Myriad Pro'
 }
 
 .owl-theme .owl-controls .owl-buttons div {
@@ -735,7 +736,7 @@ div.wpcf7 img.ajax-loader {
 }
 
 
-////////////////////////////////////////////////////////Custom 2//
+////////////////////////////////////////////////////////Custom 2
 
 #header #searchform {
     float: none !important;
@@ -754,184 +755,5 @@ width: 30%;
 #home-content #blocks-about
 {
 	float: left;
-	padding: 0 2%;
-	width: 36%;
-}
-.date{
-	color: #a3abaf;
-}
-.more{
-    text-align: right;
-}
-.more a{
-    color: #ab0004;
-	text-transform: uppercase;
-}
-.more a:hover{
-    color: #475055;
-
-}
-
-
-.more a span{
-    color: #05056a;
-    font-size: 18px;
-    font-weight: bold;
-}
-#access a:hover, #access li.current_page_item > a, #access li.current-menu-item > a {
-	color: #ab0004 !important;
-}
-#access li li, #access li li:hover {
-	background: none repeat scroll 0 0 #fff;
-
-	color: #1f295c;
-	text-transform:inherit;
-}
-
-#blocks-last-news .more{
-    margin-top: -27px;
-}
-#blocks-last-news .item{
-    border-bottom: #dbdbdb 1px dashed;
-    padding: 15px 0;
-}
-#header .contact{
-	color: #05056a;
-}
-#header .phone{
-	display:inline;
-	padding: 10px 20px;
-	background: url("../images/phone.png") no-repeat scroll left center rgba(0, 0, 0, 0);
-}
-#header .email{
-    display:inline;
-	padding: 10px 20px;
-	background: url("../images/email.png") no-repeat scroll left center rgba(0, 0, 0, 0);
-}
-#header
-.row {
-	display: block;
-	height: 80px;
-	line-height: 80px;
-}
-#header #searchform {
-	float: none;
-	margin: 0;
-}
-#header input#s {
-	border-radius: 0;
-	height: 30px;
-}
-#blocks-job{
-	max-width: 269px;
-	float: right;
-}
-#blocks-job .jobs{
-	background: url("../images/job-bg.png") no-repeat center center;
-	color: #fff;
-	height: 76px;
-	line-height: 76px;
-	margin: auto;
-	text-align: center;
-	text-transform: uppercase;
-	vertical-align: middle;
-}
-#blocks-job .blocks-title{
-	clear: both;
-	display: block;
-	padding: 5px 0;
-}
-#blocks-job .item{
-
-}
-#blocks-job .item .img{
-display: inline-block;
-	max-width: 135px;
-}
-#blocks-job .item .cate{
-
-	background: url("../images/job-cate-bg.jpg");
-	color: #fff;
-	float: right;
-	height: 77px;
-	max-width: 122px;
-	padding-left: 12px;
-	text-align: left;
-	text-transform: uppercase;
-	width: 133px;
-}
-#blocks-about .more a {
-	background: none repeat scroll 0 0 #ab0004;
-	color: #fff;
-	padding: 0 5px;
-	text-transform: uppercase;
-}
-#blocks-about .more a span{
-	color: #fff;
-}
-#blocks-job .cate .name{
-	color: #fff;
-	font-size: 16px;
-	height: 40px;
-	line-height: 18px;
-	margin: auto;
-	padding-top: 10px;
-	text-transform: uppercase;
-
-}
-#blocks-job .cate .more{
-	text-align: left;
-	color: #fff;
-
-}
-
-#blocks-job .cate .more a{
-	text-align: left;
-	color: #fff;
-	font-size: 11px;
-
-}
-#footer .subject{
-	font-size: 22px;
-	text-transform: none;
-	color: #fff;
-	padding-bottom: 10px;
-}
-.bottom-menu .item{
-	font-size: 13px;
-}
-.entry-header{
-	border-bottom: 1px solid #cecece;
-
-}
-.title{
-	border-bottom: 3px solid #05056a;
-	color: #475055;
-	display: inline;
-	font-size: 20px;
-	text-transform: uppercase;
-}
-.about-content .entry-content{
-	width: 70%;
-	float: left;
-}
-.about-content #blocks-job{
-	width: 30%;
-	float: right;
-}
-.news-content .item{
-	border-bottom: #ccc 1px dashed;
-	padding: 10px 0;
-}
-.news-content .date{
-	float: left;
-	padding-right: 55px;
-}
-.news-content .paging-filter {
-	float: right;
 	width: 40%;
-}
-.single-title{
-	color: #ab0004;
-	font-size: 18px;
 }

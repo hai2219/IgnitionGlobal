@@ -10,9 +10,10 @@ Author: Mura
 Version: 1.0
 
 */
-?>
-
+include_once "libs/Mura.php";
 function mura_load(){
 
 return;
 }
+
+?>

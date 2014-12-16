@@ -9,8 +9,8 @@ if (isset($block_id)) {
     $block_id = 'blocks';
 }
 ?>
-<div id="<?php print $id; ?>" class="blocks">
-    <?php if (!isset($title)) {
+<div id="<?php print $block_id; ?>" class="blocks">
+    <?php if (isset($title)) {
         ?>
         <div class="blocks-title"><?php print $title ?></div>
     <?php
