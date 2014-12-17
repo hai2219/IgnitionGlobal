@@ -12,7 +12,7 @@
 
 					<header class="entry-header">
 						<div class="title">
-							Last news							</div>
+							Job							</div>
 
 					</header>
                     <div class="news-archive">
